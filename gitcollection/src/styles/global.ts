@@ -18,6 +18,10 @@ export const GlobalStyle  = createGlobalStyle`
         }
     }
 
+    body, input, textarea, select, button {
+        font: 400 1rem "Roboto", sans-serif;
+    }
+
     body{
         background: #f0f0f5 url(${imgBackground}) no-repeat 70% top;
         -wekit-font-smoothing: antialiased;
