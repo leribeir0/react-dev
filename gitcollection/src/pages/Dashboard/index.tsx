@@ -60,14 +60,14 @@ export const Dashboard: React.FC = () => {
   return (
     <>
       <img src={logo} alt="GitCollection" />
-      <Title>Catálogo de repositórios do Github</Title>
+      <Title>Repository Catalog From Github</Title>
 
       <Form 
         ref={formEl} 
         hasError={Boolean(inputError)} 
         onSubmit={handleAddRepo}>
           <input placeholder="username/repository_name" onChange={handleInputChange} />
-          <button type="submit">Buscar</button>
+          <button type="submit">Search</button>
       </Form>
 
       {inputError && <Error>{inputError}</Error>}
